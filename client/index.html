@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>My theme</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+        <form action="/form" method="POST">
+            <div class="form-group">
+             <label for="name">User Name:</label>
+             <input type="text" class="form-control" name="username">
+            </div>
+            <div class="form-group">
+              <label for="email">Email address:</label>
+              <input type="email" class="form-control" name="email">
+            </div>
+            <div class="form-group">
+              <label for="pwd">Password:</label>
+              <input type="password" class="form-control" name="pwd">
+            </div>
+            <div class="radio">
+                <label><input type="radio" name="male" value="true">Male</label>
+                  </div>
+                  <div class="radio">
+                    <label><input type="radio" name="female" value="true">Female</label>
+                  </div> 
+            <div class="checkbox">
+              <label>Hobbies:</label>
+                <label> <input type="checkbox" name="hobbies" value="singing">Singing</label>
+                <label> <input type="checkbox" name="hobbies" value="dancing">Dancing</label>
+                <label> <input type="checkbox" name="hobbies" value="badminton">Badminton</label>
+              <!-- <label><input type="hidden" name="checked" value="0"><input type="checkbox" onclick="this.previousSibling.value=1-this.previousSibling.value"> Remember me</label> -->
+            </div>
+            <div class="form-group">
+                    <label for="sel1">Select list:</label>
+                    <select class="form-control" name="sel1">
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                    </select>
+             </div>
+            <button type="submit" class="btn btn-default">Submit</button>
+          </form> 
+          <div class="hobbies">
+              <label>Hobbies:</label>
+                 <select name="sel2" id="hobby">
+                   
+                 </select>
+            </div>
+    </body>
+    <script src="script.js"></script>
+    </html>
